@@ -5,7 +5,7 @@ Library           CustomLibrary
 
 *** Test Cases ***
 API_Testing
-    ${activate_sheet}    Cus_Open_Excel    ../Project_Name/TestData/Test.xlsx    ModuleName6
+    ${activate_sheet}    Cus_Open_Excel    TestData/Test.xlsx    ModuleName6
     @{Data_Rows}    Cus_Get_Rows_By_Tc_Id    TC3456    ${activate_sheet}
     : FOR    ${i}    IN    @{Data_Rows}
     \    ${request_data}    Cus_Get_Data_By_Col_Name_Row_Index    ${activate_sheet}    ${i}    data
