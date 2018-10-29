@@ -1,23 +1,9 @@
 *** Settings ***
-Library           CustomLibrary
 Library           RequestsLibrary
 Library           HttpLibrary
-Library           HttpLibrary.HTTP
+Library           CustomLibrary
 
 *** Test Cases ***
-test123
-    ${123}    Evaluate    inspect.stack()[13]    inspect
-    ${InstanceID}    Get Library Instance    all=True
-    ${json_data}    Set Variable    1    2
-    @{list}    Create List    data=${json_data}    1=2    12=3
-    ${count}    Get Length    ${list}
-    ${list1}    Create List    23    43=34
-    log many    @{list}
-    log many    @{list}[0]
-    log    @{list}[1]
-    log    @{list}[2]
-    log many    ${list1}
-
 API_Testing
     ${activate_sheet}    Cus_Open_Excel    ../Project_Name/TestData/Test.xlsx    ModuleName6
     @{Data_Rows}    Cus_Get_Rows_By_Tc_Id    TC3456    ${activate_sheet}
