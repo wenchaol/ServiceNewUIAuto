@@ -1,10 +1,13 @@
 *** Settings ***
+Force Tags        Allen
 Library           RequestsLibrary
 Library           HttpLibrary
 Library           CustomLibrary
+Library           SeleniumLibrary
 
 *** Test Cases ***
 API_Testing
+    [Tags]    Allen
     ${activate_sheet}    Cus_Open_Excel    TestData/Test.xlsx    ModuleName6
     @{Data_Rows}    Cus_Get_Rows_By_Tc_Id    TC3456    ${activate_sheet}
     : FOR    ${i}    IN    @{Data_Rows}
@@ -21,3 +24,12 @@ API_Testing
     \    ${resp}    Cus_Requests    ${request_tpye}    ${request_url}    data=${request_data}    headers=${json_headers_1}
     \    ...    verify=${false}
     \    Should Be Equal As Strings    ${resp.status_code}    ${expect}
+
+Baidu_Search
+    [Tags]    Baidu
+    Set Selenium Implicit Wait    05 seconds
+    Open Browser    https://www.baidu.com/    Chrome
+    Input Text    xpath=//input[@id='kw']    Python
+    Click Element    xpath=//input[@id='su']
+    Element Text Should Be    xpath=//h3['@class=t c-gap-bottom-small']/a/em    Python   
+    Close Browser
