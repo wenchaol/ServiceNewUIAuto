@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20181031 15:24:13.338" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
-<suite source="C:\Users\wli34\Desktop\Auto Testing\APITesting\Project_Name\TestSuite.robot" id="s1" name="TestSuite">
+<robot generated="20181031 15:51:23.780" generator="Robot 3.0.4 (Python 2.7.15 on win32)">
+<suite source="c:\Users\wli34\Desktop\Auto Testing\APITesting\Project_Name\TestSuite.robot" id="s1" name="TestSuite">
 <test id="s1-t1" name="API_Testing">
 <kw name="Cus Open Excel" library="CustomLibrary">
 <doc>Function: gf_open_excel()</doc>
@@ -11,8 +11,8 @@
 <assign>
 <var>${activate_sheet}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.610" level="INFO">${activate_sheet} = &lt;xlrd.sheet.Sheet object at 0x0000000006C8D208&gt;</msg>
-<status status="PASS" endtime="20181031 15:24:14.610" starttime="20181031 15:24:14.595"></status>
+<msg timestamp="20181031 15:51:24.844" level="INFO">${activate_sheet} = &lt;xlrd.sheet.Sheet object at 0x00000000075062B0&gt;</msg>
+<status status="PASS" endtime="20181031 15:51:24.844" starttime="20181031 15:51:24.831"></status>
 </kw>
 <kw name="Cus Get Rows By Tc Id" library="CustomLibrary">
 <doc>Function: gf_get_rows_by_tc_id()</doc>
@@ -23,8 +23,8 @@
 <assign>
 <var>@{Data_Rows}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.611" level="INFO">@{Data_Rows} = [ 9 ]</msg>
-<status status="PASS" endtime="20181031 15:24:14.611" starttime="20181031 15:24:14.611"></status>
+<msg timestamp="20181031 15:51:24.845" level="INFO">@{Data_Rows} = [ 9 ]</msg>
+<status status="PASS" endtime="20181031 15:51:24.845" starttime="20181031 15:51:24.845"></status>
 </kw>
 <kw type="for" name="${i} IN [ @{Data_Rows} ]">
 <kw type="foritem" name="${i} = 9">
@@ -38,8 +38,8 @@
 <assign>
 <var>${request_data}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.612" level="INFO">${request_data} = from=en&amp;to=zh&amp;query=test&amp;transtype=enter&amp;simple_means_flag=3&amp;sign=431039.159886&amp;token=0b17221c071507dc88dbb53801762d2c</msg>
-<status status="PASS" endtime="20181031 15:24:14.612" starttime="20181031 15:24:14.612"></status>
+<msg timestamp="20181031 15:51:24.846" level="INFO">${request_data} = from=en&amp;to=zh&amp;query=test&amp;transtype=enter&amp;simple_means_flag=3&amp;sign=431039.159886&amp;token=0b17221c071507dc88dbb53801762d2c</msg>
+<status status="PASS" endtime="20181031 15:51:24.846" starttime="20181031 15:51:24.846"></status>
 </kw>
 <kw name="Cus Get Data By Col Name Row Index" library="CustomLibrary">
 <doc>Function: gf_get_data_by_col_name_row_index()</doc>
@@ -51,8 +51,8 @@
 <assign>
 <var>${request_tpye}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.614" level="INFO">${request_tpye} = POST</msg>
-<status status="PASS" endtime="20181031 15:24:14.614" starttime="20181031 15:24:14.613"></status>
+<msg timestamp="20181031 15:51:24.847" level="INFO">${request_tpye} = POST</msg>
+<status status="PASS" endtime="20181031 15:51:24.847" starttime="20181031 15:51:24.846"></status>
 </kw>
 <kw name="Cus Get Data By Col Name Row Index" library="CustomLibrary">
 <doc>Function: gf_get_data_by_col_name_row_index()</doc>
@@ -64,8 +64,8 @@
 <assign>
 <var>${request_url}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.616" level="INFO">${request_url} = https://fanyi.baidu.com/v2transapi</msg>
-<status status="PASS" endtime="20181031 15:24:14.616" starttime="20181031 15:24:14.614"></status>
+<msg timestamp="20181031 15:51:24.847" level="INFO">${request_url} = https://fanyi.baidu.com/v2transapi</msg>
+<status status="PASS" endtime="20181031 15:51:24.847" starttime="20181031 15:51:24.847"></status>
 </kw>
 <kw name="Cus Get Data By Col Name Row Index" library="CustomLibrary">
 <doc>Function: gf_get_data_by_col_name_row_index()</doc>
@@ -77,13 +77,13 @@
 <assign>
 <var>${request_headers}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.617" level="INFO">${request_headers} = {
+<msg timestamp="20181031 15:51:24.848" level="INFO">${request_headers} = {
             'Accept': '*/*',
             'Accept-Encoding': 'gzip, deflate, br',
             'Accept-Language': 'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7',
             'Connection': 'keep-alive',
        ...</msg>
-<status status="PASS" endtime="20181031 15:24:14.618" starttime="20181031 15:24:14.617"></status>
+<status status="PASS" endtime="20181031 15:51:24.848" starttime="20181031 15:51:24.847"></status>
 </kw>
 <kw name="Cus Get Data By Col Name Row Index" library="CustomLibrary">
 <doc>Function: gf_get_data_by_col_name_row_index()</doc>
@@ -95,8 +95,8 @@
 <assign>
 <var>${expect}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.619" level="INFO">${expect} = 200.0</msg>
-<status status="PASS" endtime="20181031 15:24:14.619" starttime="20181031 15:24:14.618"></status>
+<msg timestamp="20181031 15:51:24.848" level="INFO">${expect} = 200.0</msg>
+<status status="PASS" endtime="20181031 15:51:24.848" starttime="20181031 15:51:24.848"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -107,8 +107,8 @@
 <assign>
 <var>${json_data}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.649" level="INFO">${json_data} = {"Accept":"*/*","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7","Connection":"keep-alive","Content-Length":"118","Content-Type":"application/x-www-form-ur...</msg>
-<status status="PASS" endtime="20181031 15:24:14.649" starttime="20181031 15:24:14.619"></status>
+<msg timestamp="20181031 15:51:24.857" level="INFO">${json_data} = {"Accept":"*/*","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7","Connection":"keep-alive","Content-Length":"118","Content-Type":"application/x-www-form-ur...</msg>
+<status status="PASS" endtime="20181031 15:51:24.857" starttime="20181031 15:51:24.849"></status>
 </kw>
 <kw name="Evaluate" library="BuiltIn">
 <doc>Evaluates the given expression in Python and returns the results.</doc>
@@ -119,8 +119,8 @@
 <assign>
 <var>${json_headers}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.655" level="INFO">${json_headers} = {"Accept":"*/*","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7","Connection":"keep-alive","Content-Length":"118","Content-Type":"application/x-www-form-ur...</msg>
-<status status="PASS" endtime="20181031 15:24:14.655" starttime="20181031 15:24:14.649"></status>
+<msg timestamp="20181031 15:51:24.858" level="INFO">${json_headers} = {"Accept":"*/*","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7","Connection":"keep-alive","Content-Length":"118","Content-Type":"application/x-www-form-ur...</msg>
+<status status="PASS" endtime="20181031 15:51:24.859" starttime="20181031 15:51:24.857"></status>
 </kw>
 <kw name="To Json" library="RequestsLibrary">
 <doc>Convert a string to a JSON object</doc>
@@ -130,10 +130,10 @@
 <assign>
 <var>${json_headers_1}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.656" level="INFO">To JSON using : content={"Accept":"*/*","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7","Connection":"keep-alive","Content-Length":"118","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Host":"fanyi.baidu.com","Origin":"https://fanyi.baidu.com/","Referer":"https://fanyi.baidu.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36","X-Requested-With":"XMLHttpRequest"} </msg>
-<msg timestamp="20181031 15:24:14.656" level="INFO">To JSON using : pretty_print=False </msg>
-<msg timestamp="20181031 15:24:14.656" level="INFO">${json_headers_1} = {u'Origin': u'https://fanyi.baidu.com/', u'Content-Length': u'118', u'Accept-Language': u'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7', u'Accept-Encoding': u'gzip, deflate, br', u'Host': u'fanyi.baidu.com', u...</msg>
-<status status="PASS" endtime="20181031 15:24:14.656" starttime="20181031 15:24:14.655"></status>
+<msg timestamp="20181031 15:51:24.859" level="INFO">To JSON using : content={"Accept":"*/*","Accept-Encoding":"gzip, deflate, br","Accept-Language":"en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7","Connection":"keep-alive","Content-Length":"118","Content-Type":"application/x-www-form-urlencoded; charset=UTF-8","Host":"fanyi.baidu.com","Origin":"https://fanyi.baidu.com/","Referer":"https://fanyi.baidu.com/","User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.67 Safari/537.36","X-Requested-With":"XMLHttpRequest"} </msg>
+<msg timestamp="20181031 15:51:24.859" level="INFO">To JSON using : pretty_print=False </msg>
+<msg timestamp="20181031 15:51:24.859" level="INFO">${json_headers_1} = {u'Origin': u'https://fanyi.baidu.com/', u'Content-Length': u'118', u'Accept-Language': u'en-US,en;q=0.9,zh-CN;q=0.8,zh;q=0.7', u'Accept-Encoding': u'gzip, deflate, br', u'Host': u'fanyi.baidu.com', u...</msg>
+<status status="PASS" endtime="20181031 15:51:24.859" starttime="20181031 15:51:24.859"></status>
 </kw>
 <kw name="Convert To Boolean" library="BuiltIn">
 <doc>Converts the given item to Boolean true or false.</doc>
@@ -143,8 +143,8 @@
 <assign>
 <var>${false}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.657" level="INFO">${false} = False</msg>
-<status status="PASS" endtime="20181031 15:24:14.657" starttime="20181031 15:24:14.656"></status>
+<msg timestamp="20181031 15:51:24.860" level="INFO">${false} = False</msg>
+<status status="PASS" endtime="20181031 15:51:24.860" starttime="20181031 15:51:24.859"></status>
 </kw>
 <kw name="Convert To Integer" library="BuiltIn">
 <doc>Converts the given item to an integer number.</doc>
@@ -154,8 +154,8 @@
 <assign>
 <var>${expect}</var>
 </assign>
-<msg timestamp="20181031 15:24:14.657" level="INFO">${expect} = 200</msg>
-<status status="PASS" endtime="20181031 15:24:14.657" starttime="20181031 15:24:14.657"></status>
+<msg timestamp="20181031 15:51:24.860" level="INFO">${expect} = 200</msg>
+<status status="PASS" endtime="20181031 15:51:24.860" starttime="20181031 15:51:24.860"></status>
 </kw>
 <kw name="Cus Requests" library="CustomLibrary">
 <doc>Function: gf_requests()</doc>
@@ -169,10 +169,10 @@
 <assign>
 <var>${resp}</var>
 </assign>
-<msg timestamp="20181031 15:24:15.408" level="INFO">c:\python27\lib\site-packages\urllib3\connectionpool.py:857: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
+<msg timestamp="20181031 15:51:25.437" level="INFO">c:\python27\lib\site-packages\urllib3\connectionpool.py:857: InsecureRequestWarning: Unverified HTTPS request is being made. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#ssl-warnings
   InsecureRequestWarning)</msg>
-<msg timestamp="20181031 15:24:15.409" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
-<status status="PASS" endtime="20181031 15:24:15.409" starttime="20181031 15:24:14.658"></status>
+<msg timestamp="20181031 15:51:25.437" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" endtime="20181031 15:51:25.437" starttime="20181031 15:51:24.860"></status>
 </kw>
 <kw name="Should Be Equal As Strings" library="BuiltIn">
 <doc>Fails if objects are unequal after converting them to strings.</doc>
@@ -180,83 +180,29 @@
 <arg>${resp.status_code}</arg>
 <arg>${expect}</arg>
 </arguments>
-<status status="PASS" endtime="20181031 15:24:15.411" starttime="20181031 15:24:15.410"></status>
+<status status="PASS" endtime="20181031 15:51:25.438" starttime="20181031 15:51:25.437"></status>
 </kw>
-<status status="PASS" endtime="20181031 15:24:15.411" starttime="20181031 15:24:14.612"></status>
+<status status="PASS" endtime="20181031 15:51:25.438" starttime="20181031 15:51:24.845"></status>
 </kw>
-<status status="PASS" endtime="20181031 15:24:15.411" starttime="20181031 15:24:14.612"></status>
+<status status="PASS" endtime="20181031 15:51:25.438" starttime="20181031 15:51:24.845"></status>
 </kw>
 <tags>
 <tag>Allen</tag>
 </tags>
-<status status="PASS" endtime="20181031 15:24:15.412" critical="yes" starttime="20181031 15:24:14.594"></status>
+<status status="PASS" endtime="20181031 15:51:25.439" critical="yes" starttime="20181031 15:51:24.829"></status>
 </test>
-<test id="s1-t2" name="Baidu_Search">
-<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<arguments>
-<arg>10 seconds</arg>
-</arguments>
-<status status="PASS" endtime="20181031 15:24:15.420" starttime="20181031 15:24:15.420"></status>
-</kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<doc>Opens a new browser instance to the given ``url``.</doc>
-<arguments>
-<arg>https://www.baidu.com/</arg>
-<arg>Chrome</arg>
-</arguments>
-<msg timestamp="20181031 15:24:15.422" level="INFO">Opening browser 'Chrome' to base url 'https://www.baidu.com/'.</msg>
-<status status="PASS" endtime="20181031 15:24:20.492" starttime="20181031 15:24:15.421"></status>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//input[@id='kw']</arg>
-<arg>Python</arg>
-</arguments>
-<msg timestamp="20181031 15:24:20.495" level="INFO">Typing text 'Python' into text field 'xpath=//input[@id='kw']'.</msg>
-<status status="PASS" endtime="20181031 15:24:20.744" starttime="20181031 15:24:20.494"></status>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<doc>Click element identified by ``locator``.</doc>
-<arguments>
-<arg>xpath=//input[@id='su']</arg>
-</arguments>
-<msg timestamp="20181031 15:24:20.745" level="INFO">Clicking element 'xpath=//input[@id='su']'.</msg>
-<status status="PASS" endtime="20181031 15:24:20.905" starttime="20181031 15:24:20.745"></status>
-</kw>
-<kw name="Element Text Should Be" library="SeleniumLibrary">
-<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
-<arguments>
-<arg>xpath=//h3['@class=t c-gap-bottom-small']/a/em</arg>
-<arg>Python</arg>
-</arguments>
-<msg timestamp="20181031 15:24:20.908" level="INFO">Verifying element 'xpath=//h3['@class=t c-gap-bottom-small']/a/em' contains exact text 'Python'.</msg>
-<status status="PASS" endtime="20181031 15:24:22.521" starttime="20181031 15:24:20.907"></status>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20181031 15:24:25.382" starttime="20181031 15:24:22.522"></status>
-</kw>
-<tags>
-<tag>Allen</tag>
-<tag>Baidu</tag>
-</tags>
-<status status="PASS" endtime="20181031 15:24:25.383" critical="yes" starttime="20181031 15:24:15.418"></status>
-</test>
-<status status="PASS" endtime="20181031 15:24:25.388" starttime="20181031 15:24:13.343"></status>
+<status status="PASS" endtime="20181031 15:51:25.440" starttime="20181031 15:51:23.784"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="0" pass="2">Critical Tests</stat>
-<stat fail="0" pass="2">All Tests</stat>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
 </total>
 <tag>
-<stat fail="0" pass="2">Allen</stat>
-<stat fail="0" pass="1">Baidu</stat>
+<stat fail="0" pass="1">Allen</stat>
 </tag>
 <suite>
-<stat fail="0" id="s1" name="TestSuite" pass="2">TestSuite</stat>
+<stat fail="0" id="s1" name="TestSuite" pass="1">TestSuite</stat>
 </suite>
 </statistics>
 <errors>
